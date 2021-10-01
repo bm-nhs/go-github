@@ -180,10 +180,6 @@ type RepositoryListOptions struct {
 	// Default: when using full_name: asc; otherwise desc
 	Direction string `url:"direction,omitempty"`
 
-	PerPage string `url:"per_page,omitempty"`
-
-	Page string `url:"page,omitempty"`
-
 	ListOptions
 }
 
@@ -236,6 +232,10 @@ type RepositoryListByOrgOptions struct {
 	// Direction in which to sort repositories. Can be one of asc or desc.
 	// Default when using full_name: asc; otherwise desc.
 	Direction string `url:"direction,omitempty"`
+
+	PerPage string `url:"per_page,omitempty"`
+
+	Page string `url:"page,omitempty"`
 
 	ListOptions
 }
